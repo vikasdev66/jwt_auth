@@ -1,0 +1,23 @@
+{
+  "name": "react-interview-projects-api",
+  "version": "1.0.0",
+  "description": "Creating a API to manage react interview project backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js",
+    "devServer": "nodemon ./server.js",
+    "devAuthServer": "nodemon ./authServer.js"
+  },
+  "author": "Vikas Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

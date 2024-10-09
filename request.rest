@@ -1,0 +1,39 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFqIiwiaWF0IjoxNzI4NDY4NTIyLCJleHAiOjE3Mjg0Njg1NDd9.7fCCniMT4X9Zj-dMCdVdtNGSaGIw-jnq3q9f2vSQXXk
+
+###
+
+DELETE http://localhost:3000/users/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFqIiwiaWF0IjoxNzI4NDY4NDc2fQ.bOdaNcW7jqtYUz-KbRfn5w8X4pgg1aV1y36VRtTtxv0"
+}
+
+###
+
+POST http://localhost:3000/users/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFqIiwiaWF0IjoxNzI4NDY4NDc2fQ.bOdaNcW7jqtYUz-KbRfn5w8X4pgg1aV1y36VRtTtxv0"
+}
+
+###
+
+# POST http://localhost:5000/users/login
+# Content-Type: application/json
+
+# {
+#     "name":"raj",
+#     "password": "password"
+# }
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username":"raj"
+}
